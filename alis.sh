@@ -1284,7 +1284,7 @@ function desktop_environment_gnome() {
 }
 
 function desktop_environment_kde() {
-    pacman_install "plasma plasma-wayland-session konsole yakuake kate sddm kdegraphics-thumbnailers"
+    pacman_install "plasma plasma-wayland-session konsole yakuake kate sddm dolphin dolphin-plugins kimageformats ffmpegthumbs kdegraphics-thumbnailers ark"
     arch-chroot /mnt systemctl enable sddm.service
 }
 
