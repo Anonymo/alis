@@ -1284,7 +1284,7 @@ function desktop_environment_gnome() {
 }
 
 function desktop_environment_kde() {
-    pacman_install "plasma-meta plasma-wayland-session kde-applications-meta"
+    pacman_install "plasma plasma-wayland-session konsole yakuake kate sddm"
     arch-chroot /mnt systemctl enable sddm.service
 }
 
